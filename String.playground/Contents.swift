@@ -9,9 +9,11 @@ Blah = "He He He"
 print (Blah)
 
 let multiplier = 3
-let message = " 3 times 2.5 is 7.5"
+let sample = (multiplier * double 2.5")
+print(Int (3.00000000000000))
+let derp = ("7")
 //message is "is "3 * 2.5 = 7.5"
-print (message)
+print (sample)
 
 let unusualMenagerie = "Unicorn, Clover, Ladybug"
 print("unusualMenagerie has 24 characters")
