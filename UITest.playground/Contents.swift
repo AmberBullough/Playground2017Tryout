@@ -28,3 +28,4 @@ let myView3 = UIView(frame: rect)
 myView3.backgroundColor = .red
 
 var datePickerMode: UIDatePicker { get set }
+let date
