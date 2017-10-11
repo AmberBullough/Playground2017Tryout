@@ -27,5 +27,27 @@ let rect3 = CGRect(x:100, y:5, width:100, height:5000)
 let myView3 = UIView(frame: rect)
 myView3.backgroundColor = .red
 
-var datePickerMode: UIDatePicker { get set }
-let date
+let label = UILabel(frame: CGRect(x:0, y: 0, width: 200, height:20))
+label.center = CGPoint(x:160, y:285)
+label.textAlignment = .center
+label.text = "Whoot look at me!"
+//self.view.addSubview(label)
+
+let label2 = UILabel(frame: CGRect(x:0, y: 0, width: 20, height:200))
+label.center = CGPoint(x:16, y:16)
+label.textAlignment = .center
+label.text = "Whoot look at me too!"
+
+
+func datePickerTapped()
+{
+    DatePickerDialog().show(title: "DatePicker", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", datePickerMode: .date)
+    {
+        (date) -> Void in
+        if let dt = date {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MM/dd/yyyy"
+            self.textField.text = formatter.string(from: dt)
+    }
+}
+}
